@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        background-color: rgb(13, 25, 43);
+        height: 100vh;
+        width: 1350px;
+        display: inline-block;
+      }
+      .first {
+        background-color: rgb(20, 37, 61);
+        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        border-radius: 10px;
+        margin-top: 4rem;
+      }
+      .img-main {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 9px;
+      }
+      h4 {
+        font-size: 1.2rem;
+        padding-left: 10px;
+        color: #fff;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+      .first-par {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-bottom: 1rem;
+        color: #8d9fb8;
+      }
+      .second {
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 1rem;
+        gap: 2rem;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .second-par {
+        color: rgb(0, 255, 247);
+        font-size: 12px;
+      }
+      .third-par {
+        color: #8d9fb8;
+        font-size: 12px;
+      }
+      hr {
+        width: 80%;
+        border: none;
+        height: 1px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #2f415b;
+      }
+      .img-sec {
+        width: 10%;
+        height: 10%;
+        border: 0.5px solid #fff;
+        border-radius: 50%;
+        margin-left: 10px;
+      }
+      .third {
+        display: flex;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        gap: 1rem;
+        align-items: center;
+      }
+      .fourth-par {
+        font-size: 12px;
+        color: #8d9fb8;
+      }
+      .maker {
+        color: #fff;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="first">
+        <img
+          src="./images/image-equilibrium.jpg"
+          alt="symbol of a nft card"
+          class="img-main"
+        />
+
+        <h4>Equilibrium #3429</h4>
+
+        <p class="first-par">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+
+        <div class="second">
+          <p class="second-par">
+            <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+            0.041 ETH
+          </p>
+          <p class="third-par">
+            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+                class="icon-clock"
+              />
+            </svg>
+            3 days left
+          </p>
+        </div>
+
+        <hr />
+        <div class="third">
+          <img src="./images/image-avatar.png" class="img-sec" />
+          <p class="fourth-par">
+            Creation of <span class="maker">Jules Wyvern</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Ozzie Skysea</a>.
+      </div>
+    </section>
+  </body>
+</html>
