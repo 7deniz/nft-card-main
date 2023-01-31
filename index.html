@@ -31,7 +31,8 @@
       }
       .first {
         background-color: rgb(20, 37, 61);
-        width: 30rem;
+        max-width: 30rem;
+        /* min-height: 100vh; */
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -51,25 +52,28 @@
       }
       .images {
         position: relative;
-        transition: all 3s ease;
+        transition: all 0.3s ease;
       }
       .img-main-hover {
         position: absolute;
+        opacity: 0;
         left: 50%;
         top: 53%;
         transform: translate(-50%, -50%);
         width: 25rem;
         height: 26rem;
         border-radius: 1rem;
-        display: none;
+        /* display: none; */
         justify-content: center;
         align-items: center;
         background-color: rgba(0, 255, 255, 0.452);
       }
-      .img-main-hover,
+      /* .img-main-hover, */
+
       .images:hover {
         display: flex;
         cursor: pointer;
+        opacity: 0.2;
       }
       h1 {
         font-size: 1.8rem;
